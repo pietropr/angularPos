@@ -4,4 +4,15 @@ import { Component } from '@angular/core';
 	selector: 'tarefas',
 	templateUrl: './tarefas.component.html'
 })
-export class TarefasComponent { }
+export class TarefasComponent {
+	tarefas: string[];
+
+	constructor() {
+		this.tarefas = [
+			'Comprar Leite',
+			'Pagar a conta de luz',
+			'Consertar a cafeteira',
+			'Dormir'
+		]
+	}
+}
