@@ -24,7 +24,8 @@ import { Component } from '@angular/core';
 
 export class FormSimplesComponent {
 	nome: string = "";
-	enviar() {
-		this.nome = <HTMPInputElement>document.querySelector('input').value;
+	enviar(n) {
+		// HTMLINput... Converte o valor para um html
+		this.nome = n;
 	}
 }

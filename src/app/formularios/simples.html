@@ -1,8 +1,8 @@
 <div class="formulario">
 	<div class="campo">
 		<label for="nome">Nome</label>
-		<input type="text" name="nome" id="nome">
+		<input #n type="text" id="nome">
 	</div>
-	<button (click)="enviar()">Enviar</button>
+	<button (click)="enviar(n.value)">Enviar</button>
 	<h4>{{ nome }}</h4>
 </div>
