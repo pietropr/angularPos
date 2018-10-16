@@ -1,8 +1,12 @@
 <div class="formulario">
 	<div class="campo">
 		<label for="nome">Nome</label>
-		<input #n type="text" id="nome">
+		<!-- pode colocar #nome para colocar nome no seletor para usa-lo em funcoes -->
+		<input #n [(ngModel)]="nome" type="text" id="nome">
+		<span *ngIf="n.value.length < 6">
+			O campo deve ter mais de 6 digitos
+		</span>
 	</div>
 	<button (click)="enviar(n.value)">Enviar</button>
-	<h4>{{ nome }}</h4>
+	<h4 *ngIf="n.value != 0">#n: {{ n.value }}</h4>
 </div>

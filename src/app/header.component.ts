@@ -10,7 +10,6 @@ import { Component } from '@angular/core';
 			left: 0;
 			top: 0;
 			width: 100%;
-			padding: 5px;
 			background: #8a2be2;
 		}
 		nav ul {
