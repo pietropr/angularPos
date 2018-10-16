@@ -1,3 +1,4 @@
-<ul>
+<ol>
 	<li *ngFor="let tarefa of tarefas">{{tarefa}}</li>
-</ul>
+</ol>
+<p *ngIf="tarefas.length==0">Parabéns, você não tem tarefas pendentes!</p>
