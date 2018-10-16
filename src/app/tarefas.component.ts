@@ -27,12 +27,20 @@ export class TarefasComponent {
 	tarefas: string[];
 	n: number = 0;
 	incrementa() {
-		this.n++;
+		
+		if(this.n >= 20) {
+			window.alert('Chegou ao limite');
+		
+			return false;
+		}
+		else {
+			this.n++;
+		}
 	}
 	zerar() {
 		this.n = 0;
-	}
-	
+	};
+
 	constructor() {
 		this.tarefas = [
 			'Comprar Leite',
