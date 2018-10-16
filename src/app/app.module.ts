@@ -6,12 +6,15 @@ import { TarefasComponent } from './tarefas.component';
 import { RodapeComponent } from './rodape.component';
 import { TopoComponent } from './header.component';
 
+import { FormSimplesComponent } from './formularios/simples.component';
+
 @NgModule({
   declarations: [
     AppComponent,
     TarefasComponent,
     RodapeComponent,
-    TopoComponent
+    TopoComponent,
+    FormSimplesComponent
   ],
   imports: [
     BrowserModule
