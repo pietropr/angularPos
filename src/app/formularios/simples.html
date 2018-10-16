@@ -2,9 +2,9 @@
 	<div class="campo">
 		<label for="nome">Nome</label>
 		<!-- pode colocar #nome para colocar nome no seletor para usa-lo em funcoes -->
-		<input #n [(ngModel)]="nome" type="text" id="nome">
-		<span *ngIf="n.value.length < 6">
-			O campo deve ter mais de 6 digitos
+		<input required="required" #n="ngModel" [(ngModel)]="nome" type="text" id="nome">
+		<span [hidden]="n.valid" style="color: red;">
+			Campo obrigatório
 		</span>
 	</div>
 	<button (click)="enviar(n.value)">Enviar</button>
