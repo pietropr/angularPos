@@ -2,9 +2,12 @@
 	<div class="campo">
 		<label for="nome">Nome</label>
 		<!-- pode colocar #nome para colocar nome no seletor para usa-lo em funcoes -->
-		<input required="required" #n="ngModel" [(ngModel)]="nome" type="text" id="nome">
+		<input required="required" #n="ngModel" [(ngModel)]="nome" type="text" id="nome" minlength="4">
 		<span [hidden]="n.valid" style="color: red;">
 			Campo obrigatório
+		</span>
+		<span [hidden]="n.value.length > 4" style="color: red;">
+			Tamanho mínimo: 4 letras
 		</span>
 	</div>
 	<button (click)="enviar(n.value)">Enviar</button>
