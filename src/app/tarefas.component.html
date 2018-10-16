@@ -2,3 +2,6 @@
 	<li *ngFor="let tarefa of tarefas">{{tarefa}}</li>
 </ol>
 <p *ngIf="tarefas.length==0">Parabéns, você não tem tarefas pendentes!</p>
+<br>
+<button (click)="incrementa()">Clique aqui</button>
+<p>{{ n }}</p>

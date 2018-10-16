@@ -26,9 +26,9 @@ export class RodapeComponent {
 	constructor() {
 
 		let data = new Date();
-		let dataAno = parseInt(data.getFullYear()) + 1;
+		let dataAno = data.getFullYear();
 
 		this.ano = dataAno;
-		this.autor = 'Pietro Pinton Rosa';
+		this.autor = 'Pietro Pinton Rosaa';
 	}
 }

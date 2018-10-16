@@ -6,7 +6,11 @@ import { Component } from '@angular/core';
 })
 export class TarefasComponent {
 	tarefas: string[];
-
+	n: number = 0;
+	incrementa() {
+		this.n++;
+	}
+	
 	constructor() {
 		this.tarefas = [
 			'Comprar Leite',
