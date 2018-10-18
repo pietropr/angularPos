@@ -6,7 +6,8 @@
 		<span [hidden]="n.valid" style="color: red;">
 			Campo obrigatório
 		</span>
-		<span [hidden]="n.value?.length > 4" style="color: red;">
+		<!-- Fica invisivel se nao retornou nenhum erro de minlength -->
+		<span [hidden]="!n.errors?.minlength" style="color: red;">
 			Tamanho mínimo: 4 letras
 		</span>
 	</div>

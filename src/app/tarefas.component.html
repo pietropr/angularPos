@@ -1,8 +1,8 @@
+<h2>Tarefas</h2>
 <ol>
-	<li *ngFor="let tarefa of tarefas">{{tarefa}}</li>
+	<li *ngFor="let tarefa of tarefas">
+		{{tarefa.tarefa}}...
+		<a routerLink="/tarefa/{{tarefa.codigo}}">Veja mais</a>
+	</li>
 </ol>
 <p *ngIf="tarefas.length==0">Parabéns, você não tem tarefas pendentes!</p>
-<br>
-<button (click)="incrementa()">Clique aqui</button>
-<button (click)="zerar()">Zerar contador</button>
-<p>{{ n }}</p>

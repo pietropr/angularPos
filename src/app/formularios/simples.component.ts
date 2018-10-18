@@ -14,8 +14,9 @@ import { Component } from '@angular/core';
 		}
 
 		button {
+		    background: #8a2be2 !important;
+			border: none;
 			padding: 5px 30px;
-			background: #666 !important;
 			color: white;
 		}
 
